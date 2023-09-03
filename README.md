@@ -17,14 +17,14 @@ Ansible playbook to setup my Arch Linux machines (i.e., meant to be run against 
    ```
 1. Clone this repo
    ```
-   git clone https://github.com/loganmarchione/ansible-arch-linux.git
-   cd ansible-arch-linux
+   git clone https://github.com/brianfabre/ansible-arch.git
+   cd ansible-arch
    ```
 1. Install the Ansible requirements
    ```
    ansible-galaxy install -r requirements.yml
    ```
-1. (Optional) Edit the variables in `group_vars`
+1. Edit the variables in `group_vars`
 1. (Optional) Run the playbook in check mode to view potential changes
    ```
    ansible-playbook main.yml --ask-become-pass --check
