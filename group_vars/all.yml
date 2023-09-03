@@ -3,8 +3,8 @@
 # User configuration
 #
 user:
-  name: logan
-  full_name: "Logan Marchione"
+  name: brian
+  full_name: ""
   primary_group: users
   additional_groups: wheel
   # /bin/bash or /bin/zsh
