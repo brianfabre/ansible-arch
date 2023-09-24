@@ -1,8 +1,8 @@
+**Forked from [loganmarchione/ansible-arch-linux](https://github.com/loganmarchione/ansible-arch-linux/)**
+
 # ansible-arch-linux
 
-[![Lint](https://github.com/loganmarchione/ansible-arch-linux/actions/workflows/lint.yml/badge.svg)](https://github.com/loganmarchione/ansible-arch-linux/actions/workflows/lint.yml)
-
-Ansible playbook to setup my Arch Linux machines (i.e., meant to be run against localhost)
+Ansible playbook to setup my own personal Arch Linux machines (i.e., meant to be run against localhost)
 
 ## Explanation
 
@@ -33,6 +33,3 @@ Ansible playbook to setup my Arch Linux machines (i.e., meant to be run against 
    ```
    ansible-playbook main.yml --ask-become-pass
    ```
-
-## TODO
-- [X] Add reflector pacman hook
