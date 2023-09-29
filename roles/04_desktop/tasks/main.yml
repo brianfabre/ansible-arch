@@ -19,28 +19,25 @@
         state: present
       become: true
 
-    # - name: Start systemd service - sddm.service
-    #   ansible.builtin.systemd:
-    #     name: sddm.service
-    #     enabled: yes
-    #   become: true
+    - name: Start systemd service - sddm.service
+      ansible.builtin.systemd:
+        name: sddm.service
+        enabled: yes
+      become: true
 
 - name: Install desktop environment
-  when: desktop == "gnome"
+  when: desktop == "sway"
   block:
-    - name: Install Gnome
+    - name: Install Sway
       community.general.pacman:
         name:
-          - gnome
-          - gnome-shell
-          - gnome-control-center
-          - gdm
-          - xdg-desktop-portal-gnome
+          - sway
+          - sddm
         state: present
       become: true
 
-    - name: Start systemd service - gdm.service
+    - name: Start systemd service - sddm.service
       ansible.builtin.systemd:
-        name: gdm.service
+        name: sddm.service
         enabled: yes
       become: true
