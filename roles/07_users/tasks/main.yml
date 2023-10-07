@@ -25,14 +25,14 @@
 #     - { src: 'https://raw.githubusercontent.com/brianfabre/dotfiles/main/.zshrc', dest: '/home/brian/.zshrc' }
 #     - { src: 'https://raw.githubusercontent.com/brianfabre/dotfiles/main/.p10k.zsh', dest: '/home/brian/.p10k.zsh' }
 
-- name: Update makepkg configuration file
-  ansible.builtin.template:
-    src: makepkg.conf
-    dest: "/home/{{ user.name }}/.makepkg.conf"
-    backup: no
-    owner: "{{ user.name }}"
-    group: "{{ user.primary_group }}"
-    mode: 0644
+# - name: Update makepkg configuration file
+#   ansible.builtin.template:
+#     src: makepkg.conf
+#     dest: "/home/{{ user.name }}/.makepkg.conf"
+#     backup: no
+#     owner: "{{ user.name }}"
+#     group: "{{ user.primary_group }}"
+#     mode: 0644
 
 - name: Mask systemd services - systemd homed
   ansible.builtin.systemd:

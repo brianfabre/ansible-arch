@@ -69,6 +69,7 @@ packages:
   - curl
   - dunst
   - eza
+  - fd
   - firefox
   - flatpak
   - fzf
@@ -90,6 +91,7 @@ packages:
   - neofetch
   - neovim
   - networkmanager
+  - newsboat
   - pipewire
   - pipewire-alsa
   - pkgstats
@@ -123,6 +125,7 @@ packages:
   - zsh
   # wayland
   - bemenu
+  - bemenu-wayland
   - foot
   - grim
   - slurp
@@ -131,7 +134,7 @@ packages:
   - wofi
 
 aur_packages:
-  - clipman
+  # - clipman
   - ueberzugpp
   - wl-gammarelay
 
